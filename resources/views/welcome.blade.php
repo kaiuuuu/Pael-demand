@@ -37,5 +37,15 @@
               @endif
         @endfor
 
+        @foreach ($nomes as $nome)
+              <p>{{ $loop->index }}</p>  
+              <p>{{ $nome }}</p>
+        @endforeach
+
+        @php
+            $nome = "vini";
+            echo $nome;
+        @endphp
+
     </body>
 </html>

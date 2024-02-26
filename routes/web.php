@@ -20,13 +20,16 @@ Route::get('/', function () {
        $trabalho = "progammer";
 
        $arr = [10,20,30,40,50];
+
+       $nomes = ["Kaio", "Felipe", "Rafa", "Mayo"];
        
     return view('welcome', 
        
        ['nome' => $nome, 
         'idade' => $idade, 
         'trabalho' => $trabalho,
-        'arr' => $arr    
+        'arr' => $arr,  
+        'nomes' => $nomes
     ]);
 });
 
