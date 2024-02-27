@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>laravel plans</title>
-</head>
-<body>
-    fala meu mano 
+@extends('layouts.main')
+
+@section('title', 'Produtos')
+
+@section('content')
+
+
+    <h1>Tela de produtos</h1>
 
     <a href="/">voltai nego</a>
-</body>
-</html>
+@endsection

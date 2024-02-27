@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
-        
-    </head>
-    <body>
+@section('title', 'Pael Demands')
+
+@section('content')
+
         <h1>algum titulo</h1>
+        <img src="/img/1.jpg" alt="Banner">
         @if(10 > 15)
         <p>true da true meu nego</p>
         @endif
@@ -38,6 +35,4 @@
             $nome = "vini";
             echo $nome;
         @endphp
-
-    </body>
-</html>
+@endsection
