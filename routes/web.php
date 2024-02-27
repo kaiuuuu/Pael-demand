@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,7 @@ Route::get('/contact', function () {
 Route::get('/produtos', function () {
     return view('products');
 });
+
+
+Route::get('/login', [loginController::class, 'login']);
+Route::post('/loginr', [loginController::class, 'loginr']);
