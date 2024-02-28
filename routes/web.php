@@ -39,9 +39,17 @@ Route::get('/contact', function () {
 });
 
 Route::get('/produtos', function () {
-    return view('products');
+    
+    $busca = request('busca');
+    
+    return view('products', ['busca' => $busca]);
+});
+
+Route::get('/produtos/{id}', function ($id = null) {
+    return view('product',['id' => $id]);
 });
 
 
 Route::get('/login', [loginController::class, 'login']);
+Route::get('/login/create', [loginController::class, 'create']);
 Route::post('/loginr', [loginController::class, 'loginr']);

@@ -7,5 +7,9 @@
 
     <h1>Tela de produtos</h1>
 
+    @if ($busca != '')
+        <p>O usuario esta buscando por produto{{ $busca }}</p>
+    @endif
+
     <a href="/">voltai nego</a>
 @endsection
