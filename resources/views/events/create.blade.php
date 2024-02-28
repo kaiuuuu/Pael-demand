@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.register')
 
 @section('title', 'criar conta')
 

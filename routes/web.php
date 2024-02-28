@@ -49,8 +49,12 @@ Route::get('/produtos/{id}', function ($id = null) {
     return view('product',['id' => $id]);
 });
 
+Route::get('/regist', function () {
+    return view('regist');
+});
+
 
 Route::get('/login', [loginController::class, 'login']);
-Route::get('/login/create', [loginController::class, 'create']);
+Route::get('/events/create', [loginController::class, 'create']);
 Route::post('/loginr', [loginController::class, 'loginr']);
 

@@ -31,10 +31,10 @@
                         <a href="/" class="nav-link">Infos</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="/" class="nav-link">entrar</a>
+                        <a href="/login" class="nav-link">entrar</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="/" class="nav-link">cadastrar</a>
+                        <a href="/events/create" class="nav-link">cadastrar</a>
                     </li>
                 </ul>
                </div>
@@ -44,5 +44,7 @@
 <footer>
     Kaiu &copy; 2024
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

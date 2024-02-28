@@ -23,8 +23,8 @@ class loginController extends Controller
         }
     }
 
-    public function create(){
-         
+    public function create() {
+         return view('events.create');
     }
 
 }
