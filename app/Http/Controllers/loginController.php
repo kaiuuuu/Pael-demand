@@ -22,4 +22,10 @@ class loginController extends Controller
             return 'menor que zero';
         }
     }
+
+    public function create(){
+         
+    }
+
 }
+

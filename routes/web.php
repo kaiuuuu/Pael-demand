@@ -53,3 +53,4 @@ Route::get('/produtos/{id}', function ($id = null) {
 Route::get('/login', [loginController::class, 'login']);
 Route::get('/login/create', [loginController::class, 'create']);
 Route::post('/loginr', [loginController::class, 'loginr']);
+

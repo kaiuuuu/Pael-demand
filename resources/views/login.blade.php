@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.login')
 
 @section('title', 'Pael Demands')
 
@@ -8,7 +8,7 @@
         <input type="text" id="inputField" name="inputField"><br>
         <input type="submit" value="Submit">
     </form>
-
+    <a href="/">Volta ai nego</a>
     
 
 
