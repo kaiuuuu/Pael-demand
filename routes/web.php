@@ -58,3 +58,13 @@ Route::get('/login', [loginController::class, 'login']);
 Route::get('/events/create', [loginController::class, 'create']);
 Route::post('/loginr', [loginController::class, 'loginr']);
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
