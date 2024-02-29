@@ -3,10 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class loginController extends Controller
 {
 
+    public function index(){
+        $user = User::all();
+        return view('welcome', ['users' => $user]);
+
+    }
+    
     public function login(Request $request)
     {
         return view('login');

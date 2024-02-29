@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Eventcontrolle;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,27 +39,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/produtos', function () {
-    
-    $busca = request('busca');
-    
-    return view('products', ['busca' => $busca]);
-});
-
-Route::get('/produtos/{id}', function ($id = null) {
-    return view('product',['id' => $id]);
-});
-
-Route::get('/regist', function () {
-    return view('regist');
-});
-
-
-Route::get('/login', [loginController::class, 'login']);
-Route::get('/events/create', [loginController::class, 'create']);
-Route::post('/loginr', [loginController::class, 'loginr']);
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -68,3 +48,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/',[Eventcontrolle::class, 'index']);
+Route::get('/events/create',[Eventcontrolle::class, 'create']);
+

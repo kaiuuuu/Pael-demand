@@ -1,10 +1,9 @@
-@extends('layouts.register')
+@extends('layouts.main')
 
-@section('title', 'criar conta')
+@section('title', 'Criar Evento')
 
 @section('content')
 
-<h1>Crie uma conta aqui</h1>
+<h1>Crie um evento</h1>
 
-
-@endsection 
+@endsection

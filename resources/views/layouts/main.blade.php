@@ -5,46 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>@yield('title')</title>
-        
-        <!-- fonte do google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Fonte do Google -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
-        <!-- CSS Bootsratps -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
+        <!-- CSS Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <!-- CSS da aplicação -->
-        <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/script.js"></script>
-    
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/scripts.js"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="collapse navbar-collapse" id="navbar">
-                <a href="" class="navbar-brand">
-                    <img src="/img/2.jpg" alt="logozin">
-                </a>
-                <ul class="navbar-nav">
-                    <li class="navbar-item">
-                        <a href="/" class="nav-link">Infos</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="/login" class="nav-link">entrar</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="/events/create" class="nav-link">cadastrar</a>
-                    </li>
-                </ul>
-               </div>
-            </nav>
-        </header>
-       @yield('content')
-<footer>
-    Kaiu &copy; 2024
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="collapse navbar-collapse" id="navbar">
+            <a href="/" class="navbar-brand">
+              <img src="/img/2.jpg" alt="HDC Events">
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a href="/events/create" class="nav-link">Criar Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a href="/login" class="nav-link">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a href="/register" class="nav-link">Cadastrar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      @yield('content')
+      <footer>
+        <p>kaiuuu &copy; 2024</p>
+      </footer>
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </body>
 </html>
