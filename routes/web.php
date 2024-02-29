@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Eventcontrolle;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +49,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/',[Eventcontrolle::class, 'index']);
-Route::get('/events/create',[Eventcontrolle::class, 'create']);
+Route::get('/',[EventController::class, 'index']);
+Route::get('/events/create',[EventController::class, 'create']);
+Route::post('/events', [EventController::class, 'store']);
 
