@@ -61,6 +61,9 @@ class EventController extends Controller
 
            
        }
+
+       $user = auth()->user();
+       $event->user_id = $user->id; 
        
         $event->save();
 
