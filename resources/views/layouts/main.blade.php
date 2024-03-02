@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="collapse navbar-collapse" id="navbar">
             <a href="/" class="navbar-brand">
-              <img src="/img/2.jpg" alt="HDC Events">
+              <img src="/img/2.jpg" alt="img">
             </a>
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -40,7 +40,16 @@
           </div>
         </nav>
       </header>
-      @yield('content')
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            @if (session('msg'))
+                <p class="msg">{{ session('msg') }}</p>
+            @endif
+            @yield('content')
+          </div>
+        </div>
+      </main>
       <footer>
         <p>kaiuuu &copy; 2024</p>
       </footer>
