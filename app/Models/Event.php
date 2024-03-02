@@ -13,4 +13,6 @@ class Event extends Model
         'items' => 'array'
     ];
 
+    protected $date = ['date'];
+
 }

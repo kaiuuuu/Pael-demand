@@ -184,6 +184,11 @@
   margin: 20px 0;
 }
   
+#items-list {
+  list-style: none;
+  padding-left: 0;
+}
+
   /* footer */
   footer {
     text-align: center;
